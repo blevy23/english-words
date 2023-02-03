@@ -49,5 +49,6 @@ console.log(noProperNouns.length)
 
 }
 
-let toTest = ["D","G","R","I","C","A","N"]
+let toTest = ["C","R","U","I","T","A","N"]
 spell(toTest);
+
