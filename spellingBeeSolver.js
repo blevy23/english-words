@@ -46,9 +46,15 @@ let noProperNouns = requireCenterLetter.filter(function(word){
 })
 console.log(noProperNouns)
 console.log(noProperNouns.length)
-
+let pangram = []
+for(let i of noProperNouns){
+    if(i.indexOf(lower[0]) > -1 && i.indexOf(lower[1]) > -1 && i.indexOf(lower[2]) > -1 && i.indexOf(lower[3]) > -1 && i.indexOf(lower[4]) > -1 && i.indexOf(lower[5]) > -1 && i.indexOf(lower[6]) > -1){
+        pangram.push(i)
+    }
+}
+console.log(pangram)
 }
 
-let toTest = ["C","R","U","I","T","A","N"]
+let toTest = ["R","A","O","G","U","D","N"]
 spell(toTest);
 
